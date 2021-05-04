@@ -64,10 +64,15 @@ public class Main {
         if (ch == 's' || ch == 'S') {
             System.out.println(" ");
             if (n == 0 || n == 1) {
+                System.out.println(n + " > 1 = False");
                 System.out.println("If the input is 0 or 1, then it is NOT prime number.");
             } else if (flag == 0) {
+                System.out.println(n + " > 1 = True");
+                System.out.printf("%d is can only divide by %d and 1.\n",n,n);
                 System.out.println("The result of " + n + " % 2 is not 0, then it is prime number.");
             } else if (flag == 1) {
+                System.out.println(n + " > 1 = True");
+                System.out.printf("%d is NOT can only divide by %d and 1.\n",n,n);
                 System.out.println("The result of " + n + " % 2 is equal 0, then it is NOT prime number.");
             }
         }
